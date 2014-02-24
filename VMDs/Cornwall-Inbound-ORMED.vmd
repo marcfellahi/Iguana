@@ -1,0 +1,2354 @@
+<engine version="1.0">
+   <strict_grammar_checking>False</strict_grammar_checking>
+   <java_use_native_double>False</java_use_native_double>
+   <use_passthrough_mapping>False</use_passthrough_mapping>
+   <current_config>0</current_config>
+   <incoming_config>0</incoming_config>
+   <outgoing_config>0</outgoing_config>
+   <vmd_description></vmd_description>
+   <use_dotnet_properties>True</use_dotnet_properties>
+   <global name="global">
+      <table name="Fournisseurs">
+         <description></description>
+         <action>1</action>
+         <column name="IDFournisseurs">
+            <description></description>
+            <type>Integer</type>
+         </column>
+         <column name="CodeFournisseur">
+            <description></description>
+            <type>String</type>
+         </column>
+         <column name="NomFournisseur">
+            <description></description>
+            <type>String</type>
+         </column>
+         <column name="CREATED_ON">
+            <description></description>
+            <type>DateTime</type>
+         </column>
+         <column name="CREATED_BY">
+            <description></description>
+            <type>String</type>
+         </column>
+         <column name="MODIFIED_ON">
+            <description></description>
+            <type>DateTime</type>
+         </column>
+         <column name="MODIFIED_BY">
+            <description></description>
+            <type>String</type>
+         </column>
+         <column name="UD1">
+            <description></description>
+            <type>String</type>
+         </column>
+         <column name="UD2">
+            <description></description>
+            <type>String</type>
+         </column>
+         <column name="UD3">
+            <description></description>
+            <type>String</type>
+         </column>
+         <column name="UD4">
+            <description></description>
+            <type>String</type>
+         </column>
+         <column name="UD5">
+            <description></description>
+            <type>String</type>
+         </column>
+         <column name="NomFournisseurCourt">
+            <description></description>
+            <type>String</type>
+         </column>
+      </table>
+      <table name="Produit">
+         <description></description>
+         <action>1</action>
+         <column name="IDProduit">
+            <description></description>
+            <type>Integer</type>
+         </column>
+         <column name="CodeProduit">
+            <description></description>
+            <type>String</type>
+         </column>
+         <column name="Description">
+            <description></description>
+            <type>String</type>
+         </column>
+         <column name="CodeFamille">
+            <description></description>
+            <type>String</type>
+         </column>
+         <column name="UniteDistribution">
+            <description></description>
+            <type>String</type>
+         </column>
+         <column name="CodeSource">
+            <description></description>
+            <type>String</type>
+         </column>
+         <column name="Valeur">
+            <description></description>
+            <type>String</type>
+         </column>
+         <column name="QteEmballage">
+            <description></description>
+            <type>Integer</type>
+         </column>
+         <column name="Statut">
+            <description></description>
+            <type>String</type>
+         </column>
+         <column name="CodeSpecialite">
+            <description></description>
+            <type>String</type>
+         </column>
+         <column name="VirtuoDestImputation">
+            <description></description>
+            <type>String</type>
+         </column>
+         <column name="ProduitCritique">
+            <description></description>
+            <type>Integer</type>
+         </column>
+         <column name="UD1">
+            <description></description>
+            <type>String</type>
+         </column>
+         <column name="UD2">
+            <description></description>
+            <type>String</type>
+         </column>
+         <column name="UD3">
+            <description></description>
+            <type>String</type>
+         </column>
+         <column name="UD4">
+            <description></description>
+            <type>String</type>
+         </column>
+         <column name="UD5">
+            <description></description>
+            <type>String</type>
+         </column>
+         <column name="QuotaSeuilEstUniteDistribution">
+            <description></description>
+            <type>Integer</type>
+         </column>
+         <column name="SeuilDeReappro">
+            <description></description>
+            <type>Integer</type>
+         </column>
+         <column name="IDProtocoleReception">
+            <description></description>
+            <type>Integer</type>
+         </column>
+         <column name="CREATED_ON">
+            <description></description>
+            <type>DateTime</type>
+         </column>
+         <column name="CREATED_BY">
+            <description></description>
+            <type>String</type>
+         </column>
+         <column name="MODIFIED_ON">
+            <description></description>
+            <type>DateTime</type>
+         </column>
+         <column name="MODIFIED_BY">
+            <description></description>
+            <type>String</type>
+         </column>
+         <column name="controleExpiration">
+            <description></description>
+            <type>Integer</type>
+         </column>
+         <column name="ClasseABC">
+            <description></description>
+            <type>String</type>
+         </column>
+         <column name="LabelWarning">
+            <description></description>
+            <type>String</type>
+         </column>
+         <column name="UniteEmballage">
+            <description></description>
+            <type>String</type>
+         </column>
+         <column name="UniteAchat">
+            <description></description>
+            <type>String</type>
+         </column>
+         <column name="SellingPrice">
+            <description></description>
+            <type>Integer</type>
+         </column>
+         <column name="CouleurMessageAvertissement">
+            <description></description>
+            <type>Integer</type>
+         </column>
+         <column name="CouleurSelectionnee">
+            <description></description>
+            <type>Integer</type>
+         </column>
+         <column name="ProductCategoryID">
+            <description></description>
+            <type>Integer</type>
+         </column>
+      </table>
+      <table name="ProduitsFournisseurs">
+         <description></description>
+         <action>1</action>
+         <column name="IDProduitsFournisseurs">
+            <description></description>
+            <type>Integer</type>
+         </column>
+         <column name="IDFournisseurs">
+            <description></description>
+            <type>Integer</type>
+         </column>
+         <column name="IDProduit">
+            <description></description>
+            <type>Integer</type>
+         </column>
+         <column name="CodeProduitFournisseur">
+            <description></description>
+            <type>String</type>
+         </column>
+         <column name="UPN">
+            <description></description>
+            <type>String</type>
+         </column>
+         <column name="PCN">
+            <description></description>
+            <type>String</type>
+         </column>
+         <column name="CREATED_ON">
+            <description></description>
+            <type>DateTime</type>
+         </column>
+         <column name="CREATED_BY">
+            <description></description>
+            <type>String</type>
+         </column>
+         <column name="MODIFIED_ON">
+            <description></description>
+            <type>DateTime</type>
+         </column>
+         <column name="MODIFIED_BY">
+            <description></description>
+            <type>String</type>
+         </column>
+      </table>
+      <message name="Default">
+         <description>Inbound Entries</description>
+         <table_grammar name="Default">
+            <type>group</type>
+            <table_grammar name="ProduitsFournisseurs">
+               <type>table</type>
+               <table_ref>ProduitsFournisseurs</table_ref>
+            </table_grammar>
+            <table_grammar name="Produit">
+               <type>table</type>
+               <table_ref>Produit</table_ref>
+            </table_grammar>
+            <table_grammar name="Fournisseurs">
+               <type>table</type>
+               <table_ref>Fournisseurs</table_ref>
+            </table_grammar>
+         </table_grammar>
+      </message>
+   </global>
+   <config name="default">
+      <date_time name="Time Stamp">
+         <description>Date, time and zone.</description>
+         <fields_required>False</fields_required>
+         <mask>YYYY</mask>
+         <mask>MM</mask>
+         <mask>DD</mask>
+         <mask>HH</mask>
+         <mask>mm</mask>
+         <mask>SS</mask>
+         <mask>.SSSS</mask>
+         <mask>+/-ZZZZ</mask>
+      </date_time>
+      <composite name="TS">
+         <description>Time Stamp</description>
+         <field>
+            <name>Time Of An Event</name>
+            <max_length>0</max_length>
+            <is_required>False</is_required>
+            <is_length_restricted>False</is_length_restricted>
+            <data_type>DateTime</data_type>
+            <datetime_ref>Time Stamp</datetime_ref>
+         </field>
+         <field>
+            <name>Degree Of Precision</name>
+            <max_length>0</max_length>
+            <is_required>False</is_required>
+            <is_length_restricted>False</is_length_restricted>
+            <data_type>Composite</data_type>
+            <composite_ref>ST</composite_ref>
+         </field>
+      </composite>
+      <composite name="ST">
+         <description>String</description>
+         <field>
+            <name>Value</name>
+            <max_length>0</max_length>
+            <is_required>False</is_required>
+            <is_length_restricted>False</is_length_restricted>
+            <data_type>String</data_type>
+         </field>
+      </composite>
+      <composite name="ID">
+         <description>Coded Values For Hl7 Tables</description>
+         <field>
+            <name>Value</name>
+            <max_length>0</max_length>
+            <is_required>False</is_required>
+            <is_length_restricted>False</is_length_restricted>
+            <data_type>String</data_type>
+         </field>
+      </composite>
+      <composite name="HD">
+         <description>Hierarchic Designator</description>
+         <field>
+            <name>Namespace ID</name>
+            <max_length>0</max_length>
+            <is_required>False</is_required>
+            <is_length_restricted>False</is_length_restricted>
+            <data_type>Composite</data_type>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Universal ID</name>
+            <max_length>0</max_length>
+            <is_required>False</is_required>
+            <is_length_restricted>False</is_length_restricted>
+            <data_type>Composite</data_type>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Universal ID Type</name>
+            <max_length>0</max_length>
+            <is_required>False</is_required>
+            <is_length_restricted>False</is_length_restricted>
+            <data_type>Composite</data_type>
+            <composite_ref>ID</composite_ref>
+         </field>
+      </composite>
+      <composite name="IS">
+         <description>Coded Value For User-defined Tables</description>
+         <field>
+            <name>Value</name>
+            <max_length>0</max_length>
+            <is_required>False</is_required>
+            <is_length_restricted>False</is_length_restricted>
+            <data_type>String</data_type>
+         </field>
+      </composite>
+      <composite name="CE">
+         <description>Coded Element</description>
+         <field>
+            <name>Identifier (ST)</name>
+            <max_length>0</max_length>
+            <is_required>False</is_required>
+            <is_length_restricted>False</is_length_restricted>
+            <data_type>Composite</data_type>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Text</name>
+            <max_length>0</max_length>
+            <is_required>False</is_required>
+            <is_length_restricted>False</is_length_restricted>
+            <data_type>Composite</data_type>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Name Of Coding System</name>
+            <max_length>0</max_length>
+            <is_required>False</is_required>
+            <is_length_restricted>False</is_length_restricted>
+            <data_type>Composite</data_type>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Alternate Identifier (ST)</name>
+            <max_length>0</max_length>
+            <is_required>False</is_required>
+            <is_length_restricted>False</is_length_restricted>
+            <data_type>Composite</data_type>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Alternate Text</name>
+            <max_length>0</max_length>
+            <is_required>False</is_required>
+            <is_length_restricted>False</is_length_restricted>
+            <data_type>Composite</data_type>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Name Of Alternate Coding System</name>
+            <max_length>0</max_length>
+            <is_required>False</is_required>
+            <is_length_restricted>False</is_length_restricted>
+            <data_type>Composite</data_type>
+            <composite_ref>IS</composite_ref>
+         </field>
+      </composite>
+      <composite name="MSG">
+         <description>Message Type</description>
+         <field>
+            <name>Message Type</name>
+            <max_length>0</max_length>
+            <is_required>False</is_required>
+            <is_length_restricted>False</is_length_restricted>
+            <data_type>Composite</data_type>
+            <composite_ref>ID</composite_ref>
+         </field>
+         <field>
+            <name>Trigger Event</name>
+            <max_length>0</max_length>
+            <is_required>False</is_required>
+            <is_length_restricted>False</is_length_restricted>
+            <data_type>Composite</data_type>
+            <composite_ref>ID</composite_ref>
+         </field>
+         <field>
+            <name>Message Structure</name>
+            <max_length>0</max_length>
+            <is_required>False</is_required>
+            <is_length_restricted>False</is_length_restricted>
+            <data_type>Composite</data_type>
+            <composite_ref>ID</composite_ref>
+         </field>
+      </composite>
+      <composite name="NM">
+         <description>Numeric</description>
+         <field>
+            <name>Value</name>
+            <max_length>0</max_length>
+            <is_required>False</is_required>
+            <is_length_restricted>False</is_length_restricted>
+            <data_type>Double</data_type>
+         </field>
+      </composite>
+      <composite name="VID">
+         <description>Version Identifier</description>
+         <field>
+            <name>Version ID</name>
+            <max_length>0</max_length>
+            <is_required>False</is_required>
+            <is_length_restricted>False</is_length_restricted>
+            <data_type>Composite</data_type>
+            <composite_ref>ID</composite_ref>
+         </field>
+         <field>
+            <name>Internationalization Code</name>
+            <max_length>0</max_length>
+            <is_required>False</is_required>
+            <is_length_restricted>False</is_length_restricted>
+            <data_type>Composite</data_type>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>International Version ID</name>
+            <max_length>0</max_length>
+            <is_required>False</is_required>
+            <is_length_restricted>False</is_length_restricted>
+            <data_type>Composite</data_type>
+            <composite_ref>CE</composite_ref>
+         </field>
+      </composite>
+      <composite name="PT">
+         <description>Processing Type</description>
+         <field>
+            <name>Processing ID</name>
+            <max_length>0</max_length>
+            <is_required>False</is_required>
+            <is_length_restricted>False</is_length_restricted>
+            <data_type>Composite</data_type>
+            <composite_ref>ID</composite_ref>
+         </field>
+         <field>
+            <name>Processing Mode</name>
+            <max_length>0</max_length>
+            <is_required>False</is_required>
+            <is_length_restricted>False</is_length_restricted>
+            <data_type>Composite</data_type>
+            <composite_ref>ID</composite_ref>
+         </field>
+      </composite>
+      <composite name="CK">
+         <description>Composite ID With Check Digit</description>
+         <field>
+            <name>ID Number (NM)</name>
+            <max_length>0</max_length>
+            <is_required>False</is_required>
+            <is_length_restricted>False</is_length_restricted>
+            <data_type>Composite</data_type>
+            <composite_ref>NM</composite_ref>
+         </field>
+         <field>
+            <name>Check Digit</name>
+            <max_length>0</max_length>
+            <is_required>False</is_required>
+            <is_length_restricted>False</is_length_restricted>
+            <data_type>Composite</data_type>
+            <composite_ref>NM</composite_ref>
+         </field>
+         <field>
+            <name>Code Identifying The Check Digit Scheme Employed</name>
+            <max_length>0</max_length>
+            <is_required>False</is_required>
+            <is_length_restricted>False</is_length_restricted>
+            <data_type>Composite</data_type>
+            <composite_ref>ID</composite_ref>
+         </field>
+         <field>
+            <name>Assigning Authority</name>
+            <max_length>0</max_length>
+            <is_required>False</is_required>
+            <is_length_restricted>False</is_length_restricted>
+            <data_type>Composite</data_type>
+            <composite_ref>HD</composite_ref>
+         </field>
+      </composite>
+      <composite name="XON">
+         <description>Extended Composite Name And Identification Number For Organizations</description>
+         <field>
+            <name>Organization Name</name>
+            <max_length>0</max_length>
+            <is_required>False</is_required>
+            <is_length_restricted>False</is_length_restricted>
+            <data_type>Composite</data_type>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Organization Name Type Code</name>
+            <max_length>0</max_length>
+            <is_required>False</is_required>
+            <is_length_restricted>False</is_length_restricted>
+            <data_type>Composite</data_type>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>ID Number (NM)</name>
+            <max_length>0</max_length>
+            <is_required>False</is_required>
+            <is_length_restricted>False</is_length_restricted>
+            <data_type>Composite</data_type>
+            <composite_ref>NM</composite_ref>
+         </field>
+         <field>
+            <name>Check Digit</name>
+            <max_length>0</max_length>
+            <is_required>False</is_required>
+            <is_length_restricted>False</is_length_restricted>
+            <data_type>Composite</data_type>
+            <composite_ref>NM</composite_ref>
+         </field>
+         <field>
+            <name>Code Identifying The Check Digit Scheme Employed</name>
+            <max_length>0</max_length>
+            <is_required>False</is_required>
+            <is_length_restricted>False</is_length_restricted>
+            <data_type>Composite</data_type>
+            <composite_ref>ID</composite_ref>
+         </field>
+         <field>
+            <name>Assigning Authority</name>
+            <max_length>0</max_length>
+            <is_required>False</is_required>
+            <is_length_restricted>False</is_length_restricted>
+            <data_type>Composite</data_type>
+            <composite_ref>HD</composite_ref>
+         </field>
+         <field>
+            <name>Identifier Type Code (IS)</name>
+            <max_length>0</max_length>
+            <is_required>False</is_required>
+            <is_length_restricted>False</is_length_restricted>
+            <data_type>Composite</data_type>
+            <composite_ref>IS</composite_ref>
+         </field>
+         <field>
+            <name>Assigning Facility ID</name>
+            <max_length>0</max_length>
+            <is_required>False</is_required>
+            <is_length_restricted>False</is_length_restricted>
+            <data_type>Composite</data_type>
+            <composite_ref>HD</composite_ref>
+         </field>
+         <field>
+            <name>Name Representation Code</name>
+            <max_length>0</max_length>
+            <is_required>False</is_required>
+            <is_length_restricted>False</is_length_restricted>
+            <data_type>Composite</data_type>
+            <composite_ref>ID</composite_ref>
+         </field>
+      </composite>
+      <segment id="0">
+         <name>MFI</name>
+         <description>Master File Identification</description>
+         <has_delimiters>True</has_delimiters>
+         <field>
+            <name>Master File Identifier</name>
+            <max_repeats>0</max_repeats>
+            <is_required>True</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Master File Application Identifier</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>HD</composite_ref>
+         </field>
+         <field>
+            <name>File-Level Event Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ID</composite_ref>
+         </field>
+         <field>
+            <name>Entered Date/Time</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>TS</composite_ref>
+         </field>
+         <field>
+            <name>Effective Date/Time</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>TS</composite_ref>
+         </field>
+         <field>
+            <name>Response Level Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ID</composite_ref>
+         </field>
+      </segment>
+      <segment id="1">
+         <name>MSH</name>
+         <description>Message Header</description>
+         <has_delimiters>True</has_delimiters>
+         <field>
+            <name>Field Separator</name>
+            <max_repeats>0</max_repeats>
+            <is_required>True</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Encoding Characters</name>
+            <max_repeats>0</max_repeats>
+            <is_required>True</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Sending Application</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>HD</composite_ref>
+         </field>
+         <field>
+            <name>Sending Facility</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>HD</composite_ref>
+         </field>
+         <field>
+            <name>Receiving Application</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>HD</composite_ref>
+         </field>
+         <field>
+            <name>Receiving Facility</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>HD</composite_ref>
+         </field>
+         <field>
+            <name>Date/Time Of Message</name>
+            <max_repeats>0</max_repeats>
+            <is_required>True</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>TS</composite_ref>
+         </field>
+         <field>
+            <name>Security</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Message Type</name>
+            <max_repeats>0</max_repeats>
+            <is_required>True</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>MSG</composite_ref>
+         </field>
+         <field>
+            <name>Message Control ID</name>
+            <max_repeats>0</max_repeats>
+            <is_required>True</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Processing ID</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>PT</composite_ref>
+         </field>
+         <field>
+            <name>Version ID</name>
+            <max_repeats>0</max_repeats>
+            <is_required>True</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>VID</composite_ref>
+         </field>
+         <field>
+            <name>Sequence Number</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>NM</composite_ref>
+         </field>
+         <field>
+            <name>Continuation Pointer</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Accept Acknowledgment Type</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ID</composite_ref>
+         </field>
+         <field>
+            <name>Application Acknowledgment Type</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ID</composite_ref>
+         </field>
+         <field>
+            <name>Country Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ID</composite_ref>
+         </field>
+         <field>
+            <name>Character Set</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ID</composite_ref>
+         </field>
+         <field>
+            <name>Principal Language Of Message</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Alternate Character Set Handling Scheme</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ID</composite_ref>
+         </field>
+         <field>
+            <name>Conformance Statement ID</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>0</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ID</composite_ref>
+         </field>
+      </segment>
+      <segment id="2">
+         <name>CD1</name>
+         <description>Charge Description Master 1</description>
+         <has_delimiters>True</has_delimiters>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Item Description</name>
+            <max_repeats>0</max_repeats>
+            <is_required>True</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Item Number</name>
+            <max_repeats>0</max_repeats>
+            <is_required>True</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Item Description 2</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Comment</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Stock Number</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Product Category ID</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Bill Code</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Hazardous Code - Latex</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Stock Active</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Inventory Mnemonic/Description</name>
+            <max_repeats>0</max_repeats>
+            <is_required>True</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Stock Minimum Reorder Point</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>NM</composite_ref>
+         </field>
+      </segment>
+      <segment id="3">
+         <name>CD2</name>
+         <description>Charge Description Master 2</description>
+         <has_delimiters>True</has_delimiters>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Unit of Measure - Pick Units</name>
+            <max_repeats>0</max_repeats>
+            <is_required>True</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Conversion Factor</name>
+            <max_repeats>0</max_repeats>
+            <is_required>True</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Manufacturer ID</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Manufacturer Catalog Number</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Primary Vendor Number/Name</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>CE</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Order Cost #1</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Order Units</name>
+            <max_repeats>0</max_repeats>
+            <is_required>True</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>True</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Maximum Shelf Quantity</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+      </segment>
+      <segment id="4">
+         <name>CD3</name>
+         <description>Charge Description Master 3</description>
+         <has_delimiters>True</has_delimiters>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Bin Location</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>TS</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>On Hand Quantity</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Stock Quantity Backordered</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Stock Quantity on Order</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>Filler</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+      </segment>
+      <segment id="5">
+         <name>ZPN</name>
+         <description>Custom Segment</description>
+         <has_delimiters>True</has_delimiters>
+         <field>
+            <name>UPN Filed 1</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+         <field>
+            <name>UPN Field 2</name>
+            <max_repeats>0</max_repeats>
+            <is_required>False</is_required>
+            <width>-1</width>
+            <in_equation><![CDATA[]]></in_equation>
+            <out_equation><![CDATA[]]></out_equation>
+            <composite_ref>ST</composite_ref>
+         </field>
+      </segment>
+      <match msg="Default">
+      </match>
+      <table name="Fournisseurs">
+         <config_mapset name="default">
+            <mapset name="Mapset">
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+            </mapset>
+         </config_mapset>
+         <column name="IDFournisseurs">
+            <config name="default">
+               <is_key>True</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="CodeFournisseur">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="NomFournisseur">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="CREATED_ON">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="CREATED_BY">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="MODIFIED_ON">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="MODIFIED_BY">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="UD1">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="UD2">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="UD3">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="UD4">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="UD5">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="NomFournisseurCourt">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+      </table>
+      <table name="Produit">
+         <config_mapset name="default">
+            <mapset name="Mapset">
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+            </mapset>
+         </config_mapset>
+         <column name="IDProduit">
+            <config name="default">
+               <is_key>True</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="CodeProduit">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="Description">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="CodeFamille">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="UniteDistribution">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="CodeSource">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="Valeur">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="QteEmballage">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="Statut">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="CodeSpecialite">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="VirtuoDestImputation">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="ProduitCritique">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="UD1">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="UD2">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="UD3">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="UD4">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="UD5">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="QuotaSeuilEstUniteDistribution">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="SeuilDeReappro">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="IDProtocoleReception">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="CREATED_ON">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="CREATED_BY">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="MODIFIED_ON">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="MODIFIED_BY">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="controleExpiration">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="ClasseABC">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="LabelWarning">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="UniteEmballage">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="UniteAchat">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="SellingPrice">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="CouleurMessageAvertissement">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="CouleurSelectionnee">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="ProductCategoryID">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+      </table>
+      <table name="ProduitsFournisseurs">
+         <config_mapset name="default">
+            <mapset name="Mapset">
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+               <node_address>
+               </node_address>
+            </mapset>
+         </config_mapset>
+         <column name="IDProduitsFournisseurs">
+            <config name="default">
+               <is_key>True</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="IDFournisseurs">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="IDProduit">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="CodeProduitFournisseur">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="UPN">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="PCN">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="CREATED_ON">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="CREATED_BY">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="MODIFIED_ON">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+         <column name="MODIFIED_BY">
+            <config name="default">
+               <is_key>False</is_key>
+               <in_equation><![CDATA[]]></in_equation>
+               <out_equation><![CDATA[]]></out_equation>
+            </config>
+         </column>
+      </table>
+      <message name="Default">
+         <ignore_unknown_segments>True</ignore_unknown_segments>
+         <ignore_segment_order>False</ignore_segment_order>
+         <in_equation><![CDATA[]]></in_equation>
+         <out_equation><![CDATA[]]></out_equation>
+         <message_grammar id="0">
+            <name>Message</name>
+            <is_optional>False</is_optional>
+            <is_repeating>False</is_repeating>
+            <ignore_segment_order>False</ignore_segment_order>
+            <max_repeats>0</max_repeats>
+            <type>group</type>
+            <message_grammar id="1">
+               <name>MSH</name>
+               <is_optional>False</is_optional>
+               <is_repeating>False</is_repeating>
+               <ignore_segment_order>False</ignore_segment_order>
+               <max_repeats>0</max_repeats>
+               <type>segment</type>
+               <segment_ref>1</segment_ref>
+            </message_grammar>
+            <message_grammar id="2">
+               <name>MFI</name>
+               <is_optional>False</is_optional>
+               <is_repeating>False</is_repeating>
+               <ignore_segment_order>False</ignore_segment_order>
+               <max_repeats>0</max_repeats>
+               <type>segment</type>
+               <segment_ref>0</segment_ref>
+            </message_grammar>
+            <message_grammar id="3">
+               <name>CD1</name>
+               <is_optional>False</is_optional>
+               <is_repeating>False</is_repeating>
+               <ignore_segment_order>False</ignore_segment_order>
+               <max_repeats>0</max_repeats>
+               <type>segment</type>
+               <segment_ref>2</segment_ref>
+            </message_grammar>
+            <message_grammar id="4">
+               <name>CD2</name>
+               <is_optional>False</is_optional>
+               <is_repeating>False</is_repeating>
+               <ignore_segment_order>False</ignore_segment_order>
+               <max_repeats>0</max_repeats>
+               <type>segment</type>
+               <segment_ref>3</segment_ref>
+            </message_grammar>
+            <message_grammar id="5">
+               <name>CD3</name>
+               <is_optional>False</is_optional>
+               <is_repeating>False</is_repeating>
+               <ignore_segment_order>False</ignore_segment_order>
+               <max_repeats>0</max_repeats>
+               <type>segment</type>
+               <segment_ref>4</segment_ref>
+            </message_grammar>
+            <message_grammar id="6">
+               <name>ZPN</name>
+               <is_optional>False</is_optional>
+               <is_repeating>False</is_repeating>
+               <ignore_segment_order>False</ignore_segment_order>
+               <max_repeats>0</max_repeats>
+               <type>segment</type>
+               <segment_ref>5</segment_ref>
+            </message_grammar>
+         </message_grammar>
+         <identifier>
+            <segment_ref>MSH</segment_ref>
+            <value>CDM</value>
+            <node_address>
+               <pair>
+                  <node_index>8</node_index>
+                  <repeat_index>0</repeat_index>
+               </pair>
+               <pair>
+                  <node_index>0</node_index>
+                  <repeat_index>0</repeat_index>
+               </pair>
+            </node_address>
+         </identifier>
+         <table_grammar name="Default">
+            <type>group</type>
+            <grammar_field_index>-1</grammar_field_index>
+            <grammar_root_ref>0</grammar_root_ref>
+            <table_grammar name="ProduitsFournisseurs">
+               <type>table</type>
+               <grammar_field_index>-1</grammar_field_index>
+               <mapset_ref>Mapset</mapset_ref>
+               <grammar_root_ref>0</grammar_root_ref>
+            </table_grammar>
+            <table_grammar name="Produit">
+               <type>table</type>
+               <grammar_field_index>-1</grammar_field_index>
+               <mapset_ref>Mapset</mapset_ref>
+               <grammar_root_ref>0</grammar_root_ref>
+            </table_grammar>
+            <table_grammar name="Fournisseurs">
+               <type>table</type>
+               <grammar_field_index>-1</grammar_field_index>
+               <mapset_ref>Mapset</mapset_ref>
+               <grammar_root_ref>0</grammar_root_ref>
+            </table_grammar>
+         </table_grammar>
+      </message>
+      <app_settings>
+         <config name="default">
+            <eom_char>0</eom_char>
+            <octal_escape_char>48</octal_escape_char>
+            <escape_default>92</escape_default>
+            <escape_escape_char>69</escape_escape_char>
+            <escape_position>6</escape_position>
+            <stub_file_dir><![CDATA[c:\temp]]></stub_file_dir>
+            <stub_file_language></stub_file_language>
+            <stub_file_prefix>HL7</stub_file_prefix>
+            <output_trailing_separators>True</output_trailing_separators>
+            <parse_separator_chars>True</parse_separator_chars>
+            <lowest_unescaped_char>32</lowest_unescaped_char>
+            <highest_unescaped_char>255</highest_unescaped_char>
+            <preset_config>HL7</preset_config>
+            <main_equation><![CDATA[]]></main_equation>
+            <parse_complete_equation><![CDATA[]]></parse_complete_equation>
+            <postprocess_equation><![CDATA[]]></postprocess_equation>
+            <main_out_equation><![CDATA[]]></main_out_equation>
+            <postprocess_out_equation><![CDATA[]]></postprocess_out_equation>
+            <output_segment_line_feed>False</output_segment_line_feed>
+            <xml_delimiter>46</xml_delimiter>
+            <xml_translation_type>TABLE - Short Tags</xml_translation_type>
+            <use_segment_checker3>False</use_segment_checker3>
+            <xml_schema_single_file>True</xml_schema_single_file>
+            <header_fields_to_skip>3</header_fields_to_skip>
+            <disable_untyped_tree_in_exception>False</disable_untyped_tree_in_exception>
+            <maximum_repeat_mapping_limit>2</maximum_repeat_mapping_limit>
+            <database_equation_on>False</database_equation_on>
+            <disable_python_none>True</disable_python_none>
+            <header_segment>MSH</header_segment>
+            <last_message_matches_all>False</last_message_matches_all>
+            <parser_version>2</parser_version>
+            <separator_info>
+               <sep_char_default>13</sep_char_default>
+               <repeat_char_default>0</repeat_char_default>
+               <sep_char_escape>0</sep_char_escape>
+               <repeat_char_escape>0</repeat_char_escape>
+               <sep_char_position>-1</sep_char_position>
+               <repeat_char_position>-1</repeat_char_position>
+            </separator_info>
+            <separator_info>
+               <sep_char_default>124</sep_char_default>
+               <repeat_char_default>126</repeat_char_default>
+               <sep_char_escape>70</sep_char_escape>
+               <repeat_char_escape>82</repeat_char_escape>
+               <sep_char_position>3</sep_char_position>
+               <repeat_char_position>5</repeat_char_position>
+            </separator_info>
+            <separator_info>
+               <sep_char_default>94</sep_char_default>
+               <repeat_char_default>0</repeat_char_default>
+               <sep_char_escape>83</sep_char_escape>
+               <repeat_char_escape>0</repeat_char_escape>
+               <sep_char_position>4</sep_char_position>
+               <repeat_char_position>-1</repeat_char_position>
+            </separator_info>
+            <separator_info>
+               <sep_char_default>38</sep_char_default>
+               <repeat_char_default>0</repeat_char_default>
+               <sep_char_escape>84</sep_char_escape>
+               <repeat_char_escape>0</repeat_char_escape>
+               <sep_char_position>7</sep_char_position>
+               <repeat_char_position>-1</repeat_char_position>
+            </separator_info>
+            <escape_data_for_xml_to_hl7>True</escape_data_for_xml_to_hl7>
+            <validate_data_for_xml_to_hl7>True</validate_data_for_xml_to_hl7>
+         </config>
+      </app_settings>
+   </config>
+</engine>
